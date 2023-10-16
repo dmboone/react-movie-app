@@ -1,4 +1,7 @@
 import './App.css';
+import getBackgroundMovies from './backgroundMovies';
+
+getBackgroundMovies();
 
 function App() {
   return (
