@@ -1,6 +1,4 @@
-let backgroundMovies = [{
-
-}];
+let backgroundMovies = [];
 
 const getBackgroundMovies = async ()=>{
     const response = await fetch(
@@ -14,7 +12,13 @@ const getBackgroundMovies = async ()=>{
         }
     )
     .then(response => response.json())
-    .then(response => console.log(response))
+    .then(response => {
+        console.log(response)
+
+        backgroundMovies = response.results;
+
+        console.log(backgroundMovies)
+    })
     .catch(err => console.error(`${err}\nCould not fetch backgroundMovies.`));
 };
 
