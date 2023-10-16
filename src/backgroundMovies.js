@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 let backgroundMovies = [];
-=======
-let backgroundMovies = [{
-
-}];
->>>>>>> f17f167f0fefad260025adedf8d6f47481b21832
 
 const getBackgroundMovies = async ()=>{
     const response = await fetch(
@@ -18,7 +12,6 @@ const getBackgroundMovies = async ()=>{
         }
     )
     .then(response => response.json())
-<<<<<<< HEAD
     .then(response => {
         console.log(response)
 
@@ -26,9 +19,6 @@ const getBackgroundMovies = async ()=>{
 
         console.log(backgroundMovies)
     })
-=======
-    .then(response => console.log(response))
->>>>>>> f17f167f0fefad260025adedf8d6f47481b21832
     .catch(err => console.error(`${err}\nCould not fetch backgroundMovies.`));
 };
 
