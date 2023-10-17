@@ -6,7 +6,9 @@ function App() {
     <div className="App">
       <header className="react-movie-app">
       </header>
-      <Backdrop></Backdrop>
+      <div>
+        <Backdrop></Backdrop>
+      </div>
     </div>
   );
 }

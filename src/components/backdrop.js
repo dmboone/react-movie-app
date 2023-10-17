@@ -7,7 +7,7 @@ console.log(backdropMovies);
 const Backdrop = () => {
     return(
         <>
-            <img src={`https://image.tmdb.org/t/p/original/${backdropMovies[0].backdrop_path}`} alt="" />
+            <img width='100%' src={`https://image.tmdb.org/t/p/original/${backdropMovies[0].backdrop_path}`} alt="" />
         </>
     );
 }
