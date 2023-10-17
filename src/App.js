@@ -1,13 +1,11 @@
 import './App.css';
-import getBackdropMovies from './backdropMovies';
-
-getBackdropMovies();
+import Backdrop from './components/backdrop';
 
 function App() {
   return (
     <div className="App">
       <header className="react-movie-app">
-        
+        <Backdrop></Backdrop>
       </header>
     </div>
   );
