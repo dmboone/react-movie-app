@@ -5,8 +5,8 @@ function App() {
   return (
     <div className="App">
       <header className="react-movie-app">
-        <Backdrop></Backdrop>
       </header>
+      <Backdrop></Backdrop>
     </div>
   );
 }
