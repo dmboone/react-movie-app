@@ -1,15 +1,21 @@
 import './App.css';
 import Backdrop from './components/backdrop';
+import { BiMenuAltLeft } from "react-icons/bi";
 
 function App() {
   return (
-    <div className="App">
-      <header className="react-movie-app">
-      </header>
-      <div>
-        <Backdrop></Backdrop>
+    <>
+      <div className="wrapper">
+        <header>
+          <h1>React-Movie-App</h1>
+          <BiMenuAltLeft
+            color='white'
+            size='2em'
+          />
+        </header>
       </div>
-    </div>
+      <Backdrop></Backdrop>
+    </>
   );
 }
 

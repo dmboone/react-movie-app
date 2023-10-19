@@ -1,5 +1,6 @@
 import getBackdropMovies from "../backdropMovies";
 import { useState, useEffect } from "react";
+import "./backdrop.css";
 
 const backdropMovies = getBackdropMovies();
 
@@ -20,7 +21,11 @@ const Backdrop = () => {
 
     return(
         <>
-            <img width='100%' src={`https://image.tmdb.org/t/p/original/${backdropMovies[backdropMovieIndex].backdrop_path}`} alt="" />
+            <h1 className="backdrop-text">{backdropMovies[backdropMovieIndex].original_title}</h1>
+
+            <div className="overlay">
+                <img width='100%' src={`https://image.tmdb.org/t/p/original/${backdropMovies[backdropMovieIndex].backdrop_path}`} alt="" />
+            </div>
         </>
     );
 }

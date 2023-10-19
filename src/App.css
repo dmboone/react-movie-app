@@ -1,1 +1,18 @@
+.wrapper{
+    width: 100%;
+    padding: 5em;
+    position: absolute;
+    z-index: 9;
+    box-sizing: border-box;
+}
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    font-size: large;
+}

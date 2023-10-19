@@ -1,0 +1,21 @@
+.backdrop-text{
+    position: absolute;
+    color: #ffffff;
+    font-family: Anton;
+    font-size: 100px;
+    margin: 0px;
+    align-items: bottom;
+    bottom: 0;
+}
+
+h1{
+    z-index: 8;
+}
+
+.overlay {
+    background-color: black;
+}
+
+img {
+    opacity: 70%;
+}
