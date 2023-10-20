@@ -8,14 +8,26 @@
     bottom: 0;
 }
 
-h1{
+.backdrop-wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2{
     z-index: 8;
+    padding: .5em;
 }
 
-.overlay {
-    background-color: black;
-}
-
-img {
-    opacity: 70%;
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 21%, rgba(2,0,36,0) 66%, rgba(2,0,36,1) 100%);
 }
