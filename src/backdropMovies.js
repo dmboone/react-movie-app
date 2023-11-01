@@ -13,8 +13,8 @@ await fetch(
 )
 .then(response => response.json())
 .then(response => {
-    // Excludes Adult Content
-    backdropMovies = response.results.filter(result => result.adult !== true);
+    // Excludes Adult Content and Non-English Films
+    backdropMovies = response.results.filter(result => result.adult !== true && result.original_language === "en");
     // Grabbing relevant information from response
     backdropMovies = backdropMovies.map(result => {
         return {
