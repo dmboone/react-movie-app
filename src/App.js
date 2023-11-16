@@ -1,6 +1,7 @@
 import './App.css';
 import Backdrop from './components/backdrop';
 import { BiMenuAltLeft } from "react-icons/bi";
+import MovieSection from './components/movieSection';
 
 function App() {
   return (
@@ -15,9 +16,22 @@ function App() {
         </header>
       </div>
       <Backdrop></Backdrop>
-      {/* <div>
-        <p>Hello</p>
-      </div> */}
+      <section>
+        <header className='sectionHeader'>Drama</header>
+        <MovieSection genre='drama'></MovieSection>
+      </section>
+      <section>
+        <header className='sectionHeader'>Romance</header>
+        <MovieSection genre='romance'></MovieSection>
+      </section>
+      <section>
+        <header className='sectionHeader'>Comedy</header>
+        <MovieSection genre='comedy'></MovieSection>
+      </section>
+      <section>
+        <header className='sectionHeader'>Horror</header>
+        <MovieSection genre='horror'></MovieSection>
+      </section>
     </>
   );
 }

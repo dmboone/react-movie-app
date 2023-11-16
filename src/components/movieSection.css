@@ -1,0 +1,10 @@
+.moviePoster{
+    height: 300px;
+    width: auto;
+    /* display: inline;  */
+}
+
+.row {
+    display: flex;
+    gap: 1%;
+}
