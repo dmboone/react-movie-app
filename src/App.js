@@ -1,6 +1,6 @@
 import './App.css';
 import Backdrop from './components/backdrop';
-import { BiMenuAltLeft } from "react-icons/bi";
+import { BiMenuAltRight } from "react-icons/bi";
 import MovieSection from './components/movieSection';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       <div className="wrapper">
         <header>
           <h1>React-Movie-App</h1>
-          <BiMenuAltLeft
+          <BiMenuAltRight
             color='white'
             size='2em'
           />
@@ -17,19 +17,19 @@ function App() {
       </div>
       <Backdrop></Backdrop>
       <section>
-        <header className='sectionHeader'>Drama</header>
+        <h3 className='sectionHeader'>Drama</h3>
         <MovieSection genre='drama'></MovieSection>
       </section>
       <section>
-        <header className='sectionHeader'>Romance</header>
+        <h3 className='sectionHeader'>Romance</h3>
         <MovieSection genre='romance'></MovieSection>
       </section>
       <section>
-        <header className='sectionHeader'>Comedy</header>
+        <h3 className='sectionHeader'>Comedy</h3>
         <MovieSection genre='comedy'></MovieSection>
       </section>
       <section>
-        <header className='sectionHeader'>Horror</header>
+        <h3 className='sectionHeader'>Horror</h3>
         <MovieSection genre='horror'></MovieSection>
       </section>
     </>

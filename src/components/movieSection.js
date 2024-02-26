@@ -1,5 +1,7 @@
 import getMovies from "../getMovies";
 import "./movieSection.css";
+import { BiChevronLeft } from "react-icons/bi";
+import { BiChevronRight } from "react-icons/bi";
 import { useState, useEffect } from "react";
 
 let genreMap = {
@@ -25,10 +27,20 @@ const MovieSection = (props) => {
     return(
         <>
             <div className="row">
-            {movies.map((movie) => (
-                <img className="moviePoster" src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt="" key={`${movie.id}`}/> 
-            ))
-            }
+                <div className="page-button left">
+                    <BiChevronLeft 
+                        color='white'
+                        size='4em'/>
+                </div>
+                {movies.map((movie) => (
+                    <img className="movie-posters" src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt="" key={`${movie.id}`}/> 
+                ))
+                }
+                <div className="page-button right">
+                    <BiChevronRight 
+                        color='white'
+                        size='4em'/>
+                </div>
             </div>
         </>
     );

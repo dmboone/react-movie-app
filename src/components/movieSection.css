@@ -1,10 +1,46 @@
-.moviePoster{
-    height: 300px;
-    width: auto;
-    /* display: inline;  */
+.page-button{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    justify-content: center;
+    opacity: 0;
+    width: 100px;
+    transition-duration: .5s;
+}
+
+.page-button:hover{
+    opacity: 100%;
+    transition-duration: .5s;
+}
+
+.left{
+    left: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(2,0,36,.50) 75%, rgba(2,0,36,0) 100%);
+}
+
+.right{
+    right: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0) 0%, rgba(2,0,36,.50) 25%, rgba(2,0,36,1) 100%);
 }
 
 .row {
     display: flex;
+    height: 300px;
+    overflow:scroll;
     gap: 1%;
+    scroll-behavior: smooth;
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.row::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .row {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }

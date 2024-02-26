@@ -2,6 +2,7 @@ body, html, #root{
     height: 100%;
     padding: 0;
     margin: 0;
+    background-color: #020024;
 }
 
 .wrapper{
@@ -12,9 +13,13 @@ body, html, #root{
     box-sizing: border-box;
 }
 
-header {
+header{
     display: flex;
     justify-content: space-between;
+}
+
+.sectionHeader{
+    color: white;
 }
 
 h1 {
