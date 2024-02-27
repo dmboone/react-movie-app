@@ -2,7 +2,7 @@ import getMovies from "../getMovies";
 import "./movieSection.css";
 import { BiChevronLeft } from "react-icons/bi";
 import { BiChevronRight } from "react-icons/bi";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 let genreMap = {
     drama: '18',
@@ -16,6 +16,7 @@ let genreMap = {
 const MovieSection = (props) => {
 
     const [movies, setMovies] = useState([]);
+    const moviesRef = useRef(null);
 
     useEffect(() => {
         getMovies(`https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&with_genres=${genreMap[props.genre]}`)
@@ -24,25 +25,37 @@ const MovieSection = (props) => {
         });
     }, [props.genre]);
 
+    const scrollLeft = () =>{
+       moviesRef.current.scrollBy(-500, 0);
+    };
+
+    const scrollRight = () => {
+       moviesRef.current.scrollBy(500, 0);
+    };
+
     return(
-        <>
-            <div className="row">
-                <div className="page-button left">
-                    <BiChevronLeft 
-                        color='white'
-                        size='4em'/>
-                </div>
+        <div className="row">
+            <div className="page-button left">
+                <BiChevronLeft 
+                    color='white'
+                    size='4em'
+                    onClick={() => scrollLeft()}
+                />
+            </div>
+            <div className="movies" ref={moviesRef}>
                 {movies.map((movie) => (
-                    <img className="movie-posters" src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt="" key={`${movie.id}`}/> 
+                    <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt="" key={`${movie.id}`}/> 
                 ))
                 }
-                <div className="page-button right">
-                    <BiChevronRight 
-                        color='white'
-                        size='4em'/>
-                </div>
             </div>
-        </>
+            <div className="page-button right">
+                <BiChevronRight 
+                    color='white'
+                    size='4em'
+                    onClick={() => scrollRight()}
+                />
+            </div>
+        </div>
     );
 }
 

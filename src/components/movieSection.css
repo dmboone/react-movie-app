@@ -5,7 +5,6 @@
     height: inherit;
     justify-content: center;
     opacity: 0;
-    width: 100px;
     transition-duration: .5s;
 }
 
@@ -29,18 +28,22 @@
 .row {
     display: flex;
     height: 300px;
-    overflow:scroll;
+}
+
+.movies{
+    display: flex;
+    overflow: scroll;
     gap: 1%;
     scroll-behavior: smooth;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.row::-webkit-scrollbar {
+.movies::-webkit-scrollbar {
     display: none;
-  }
+}
   
   /* Hide scrollbar for IE, Edge and Firefox */
-  .row {
+.movies {
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
-  }
+}

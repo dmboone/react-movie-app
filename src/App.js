@@ -16,6 +16,7 @@ function App() {
         </header>
       </div>
       <Backdrop></Backdrop>
+      {/* need to turn this into a map instead of static */}
       <section>
         <h3 className='sectionHeader'>Drama</h3>
         <MovieSection genre='drama'></MovieSection>
