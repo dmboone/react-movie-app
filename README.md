@@ -1,4 +1,5 @@
 # React Movie App
+![Demo](https://github.com/dmboone/react-movie-app/blob/master/demo.gif "Demo")
 
 Copycat movie streaming application built in React. Inspired by design by [Malik Malik](https://dribbble.com/shots/15201588-The-Mandalorian-Web-Header).
 
