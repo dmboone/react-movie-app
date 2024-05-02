@@ -1,6 +1,6 @@
 import getBackdropMovies from "../backdropMovies";
 import { useState, useEffect } from "react";
-import "./backdrop.css";
+import "./Backdrop.css";
 
 const backdropMovies = getBackdropMovies();
 

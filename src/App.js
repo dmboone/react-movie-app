@@ -1,37 +1,31 @@
-import './App.css';
-import Backdrop from './components/backdrop';
-import { BiMenuAltRight } from "react-icons/bi";
-import MovieSection from './components/movieSection';
+import "./App.css";
+import Backdrop from "./components/Backdrop";
+import MovieSection from "./components/MovieSection";
+import Header from "./components/Header";
 
 function App() {
   return (
     <>
       <div className="wrapper">
-        <header>
-          <h1>React-Movie-App</h1>
-          <BiMenuAltRight
-            color='white'
-            size='2em'
-          />
-        </header>
+        <Header></Header>
       </div>
       <Backdrop></Backdrop>
       {/* need to turn this into a map instead of static */}
       <section>
-        <h3 className='sectionHeader'>Drama</h3>
-        <MovieSection genre='drama'></MovieSection>
+        <h3 className="sectionHeader">Drama</h3>
+        <MovieSection genre="drama"></MovieSection>
       </section>
       <section>
-        <h3 className='sectionHeader'>Romance</h3>
-        <MovieSection genre='romance'></MovieSection>
+        <h3 className="sectionHeader">Romance</h3>
+        <MovieSection genre="romance"></MovieSection>
       </section>
       <section>
-        <h3 className='sectionHeader'>Comedy</h3>
-        <MovieSection genre='comedy'></MovieSection>
+        <h3 className="sectionHeader">Comedy</h3>
+        <MovieSection genre="comedy"></MovieSection>
       </section>
       <section>
-        <h3 className='sectionHeader'>Horror</h3>
-        <MovieSection genre='horror'></MovieSection>
+        <h3 className="sectionHeader">Horror</h3>
+        <MovieSection genre="horror"></MovieSection>
       </section>
     </>
   );

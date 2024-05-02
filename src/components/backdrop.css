@@ -7,7 +7,7 @@
 
 .backdrop-text{
     position: absolute;
-    color: #ffffff;
+    color: var(--white);
     font-family: Anton;
     font-size: 100px;
     margin: 0px;
@@ -98,7 +98,7 @@ h2{
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgb(2,0,36);
+    background: var(--dark);
     background: linear-gradient(0deg, rgba(2,0,36,1) 20%, rgba(2,0,36,0) 45%, rgba(2,0,36,0) 72%, rgba(2,0,36,1) 100%);
     z-index: 6;
 }

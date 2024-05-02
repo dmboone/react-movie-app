@@ -1,5 +1,5 @@
 import getMovies from "../getMovies";
-import "./movieSection.css";
+import "./MovieSection.css";
 import { BiChevronLeft } from "react-icons/bi";
 import { BiChevronRight } from "react-icons/bi";
 import { useState, useEffect, useRef } from "react";
